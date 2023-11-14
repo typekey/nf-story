@@ -1,0 +1,74 @@
+Nov-13 22:48:38.323 [main] DEBUG nextflow.cli.Launcher - $> nextflow run 02.say_hello.nf
+Nov-13 22:48:38.383 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.0
+Nov-13 22:48:38.401 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/leizheng/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.2,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.0
+Nov-13 22:48:38.409 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Nov-13 22:48:38.410 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Nov-13 22:48:38.412 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Nov-13 22:48:38.420 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Nov-13 22:48:38.479 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Nov-13 22:48:38.493 [main] INFO  nextflow.cli.CmdRun - Launching `02.say_hello.nf` [exotic_kilby] DSL2 - revision: dd6f8555b9
+Nov-13 22:48:38.494 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Nov-13 22:48:38.494 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Nov-13 22:48:38.502 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/leizheng/.nextflow/secrets/store.json
+Nov-13 22:48:38.508 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@34b9fc7d] - activable => nextflow.secret.LocalSecretsProvider@34b9fc7d
+Nov-13 22:48:38.556 [main] DEBUG nextflow.Session - Session UUID: aea1121c-62a8-4c45-ad7a-99017114e0fc
+Nov-13 22:48:38.556 [main] DEBUG nextflow.Session - Run name: exotic_kilby
+Nov-13 22:48:38.557 [main] DEBUG nextflow.Session - Executor pool size: 64
+Nov-13 22:48:38.563 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Nov-13 22:48:43.600 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.10.0 build 5889
+  Created: 15-10-2023 15:07 UTC (10:07 CDT)
+  System: Linux 4.18.0-305.57.1.el8_4.x86_64
+  Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 21.0.1+12-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 3132974@midway3-login4.rcc.local [10.50.248.66]
+  CPUs: 64 - Mem: 251.1 GB (59 GB) - Swap: 4 GB (3.2 MB) - Virtual threads ON
+Nov-13 22:48:43.623 [main] DEBUG nextflow.Session - Work-dir: /home/leizheng/workspace/nf-story/01.beginner/work [gpfs]
+Nov-13 22:48:43.623 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/leizheng/workspace/nf-story/01.beginner/bin
+Nov-13 22:48:43.631 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Nov-13 22:48:43.641 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Nov-13 22:48:43.657 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Nov-13 22:48:43.664 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
+Nov-13 22:48:43.757 [main] DEBUG nextflow.Session - Session start
+Nov-13 22:48:44.117 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Nov-13 22:48:44.129 [main] INFO  nextflow.script.BaseScript - Hello world!
+Nov-13 22:48:44.130 [main] INFO  nextflow.script.BaseScript - Hello, Tom. You are 18 years old.
+Nov-13 22:48:44.130 [main] INFO  nextflow.script.BaseScript - Hi, ${name}
+Nov-13 22:48:44.130 [main] INFO  nextflow.script.BaseScript - 
+
+██╗  ██╗███████╗██╗     ██╗      ██████╗ 
+██║  ██║██╔════╝██║     ██║     ██╔═══██╗
+███████║█████╗  ██║     ██║     ██║   ██║
+██╔══██║██╔══╝  ██║     ██║     ██║   ██║
+██║  ██║███████╗███████╗███████╗╚██████╔╝
+╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝ ╚═════╝ 
+                                         
+
+Nov-13 22:48:44.185 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-13 22:48:44.186 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-13 22:48:44.191 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Nov-13 22:48:44.199 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=64; memory=251.1 GB; capacity=64; pollInterval=100ms; dumpInterval=5m
+Nov-13 22:48:44.201 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Nov-13 22:48:44.290 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-13 22:48:44.290 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-13 22:48:44.293 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: bashHello, pythonHello
+Nov-13 22:48:44.293 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Nov-13 22:48:44.293 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > bashHello
+Nov-13 22:48:44.294 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > pythonHello
+Nov-13 22:48:44.294 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_c47efeea8c36b5cc: /home/leizheng/workspace/nf-story/01.beginner/02.say_hello.nf
+Nov-13 22:48:44.295 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Nov-13 22:48:44.295 [main] DEBUG nextflow.Session - Session await
+Nov-13 22:48:44.408 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-13 22:48:44.409 [Task submitter] INFO  nextflow.Session - [15/95ee93] Submitted process > pythonHello
+Nov-13 22:48:44.414 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-13 22:48:44.415 [Task submitter] INFO  nextflow.Session - [65/21540d] Submitted process > bashHello
+Nov-13 22:48:44.455 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: pythonHello; status: COMPLETED; exit: 0; error: -; workDir: /home/leizheng/workspace/nf-story/01.beginner/work/15/95ee93561e2929e77040ac36c22a1b]
+Nov-13 22:48:44.469 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: bashHello; status: COMPLETED; exit: 0; error: -; workDir: /home/leizheng/workspace/nf-story/01.beginner/work/65/21540d72808ff2fb8a9c52e1735bd9]
+Nov-13 22:48:44.470 [main] DEBUG nextflow.Session - Session await > all processes finished
+Nov-13 22:48:44.471 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Nov-13 22:48:44.472 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Nov-13 22:48:44.476 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Nov-13 22:48:44.599 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Nov-13 22:48:44.612 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Nov-13 22:48:44.612 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
